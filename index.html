@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+  <head>
+    <title>Click & Bulde</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="displayGolds();automatiser();displayGPS(),displayMarket()">
+  <header id="header" class="alt">
+    <h1><strong>Click & Bulde</strong></h1>
+    <section id="gold"></section>
+    <section id="gps"></section>
+  </header>
+  <main>
+  <button class="button" onclick="addGold(click_gold)">Click</button><br />
+    <ul id="market">
+      <li>Slime  cost <a id="Slime cost"></a> GOLDS and create <a id="Slime gps"></a> GPS<button onclick="buyMinion(0)" class="button">buy unit</button></li><br />
+      <li>Undead cost <a id="Undead cost"></a> GOLDS and create <a id="Undead gps"></a> GPS<button onclick="buyMinion(1)" class="button">buy unit</button></li><br />
+      <li>Bongo  cost <a id="Bongo cost"></a> GOLDS and create <a id="Bongo gps"></a> GPS<button onclick="buyMinion(2)" class="button">buy unit</button></li><br />
+      <li>Imp    cost <a id="Imp cost"></a> GOLDS and create <a id="Imp gps"></a> GPS<button onclick="buyMinion(3)" class="button">buy unit</button></li><br />
+      <li>Jarode cost <a id="Jarode cost"></a> GOLDS and create <a id="Jarode gps"></a> GPS<button onclick="buyMinion(4)" class="button">buy unit</button></li>
+    </ul><br />
+    <button class="button" onclick="resetGame()" >Recommencer</button>
+  </main>
+  <footer>
+      <strong>&copy;Machado.F & Nouar.S</strong>
+  </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
